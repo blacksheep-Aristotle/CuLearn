@@ -50,9 +50,9 @@ extra_compile_args = {
 }
 
 setup(
-    name='custom_setup_ops',
+    name='custom_setup_op_test',
     ext_modules=CUDAExtension(
-        sources=['relu_cuda.cc', 'relu_cuda.cu'],
+        sources=['/root/paddlejob/gpfs/zhangweilong/CuLearn/custom_op/elementwise/relu_cuda.cc', '/root/paddlejob/gpfs/zhangweilong/CuLearn/custom_op/elementwise/relu_cuda.cu'],
         extra_compile_args=extra_compile_args
     )
 )
